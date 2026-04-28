@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.cb24ed6d.css",
+    "main.js": "/static/js/main.78708010.js",
+    "static/js/453.baade657.chunk.js": "/static/js/453.baade657.chunk.js",
+    "static/media/pollita.png": "/static/media/pollita.790f05a013f3cc5377dd.png",
+    "index.html": "/index.html",
+    "main.cb24ed6d.css.map": "/static/css/main.cb24ed6d.css.map",
+    "main.78708010.js.map": "/static/js/main.78708010.js.map",
+    "453.baade657.chunk.js.map": "/static/js/453.baade657.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cb24ed6d.css",
+    "static/js/main.78708010.js"
+  ]
+}

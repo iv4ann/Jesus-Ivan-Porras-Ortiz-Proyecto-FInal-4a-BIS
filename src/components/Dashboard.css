@@ -1,0 +1,81 @@
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #0f172a;
+    color: #ffffff; /* Texto blanco puro */
+    text-align: center;
+    padding: 40px;
+    margin: 0;
+}
+
+h1, h2, h3 { color: #ffffff; }
+
+/* MENU */
+.menu button {
+    padding: 15px 40px;
+    margin: 10px;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn1 { background: #2563eb; color: white; }
+.btn2 { background: #16a34a; color: white; }
+.btn3 { background: #0ea5e9; color: white; }
+
+.seccion {
+    margin-top: 40px;
+}
+
+/* PARCIAL 1 */
+.doc {
+    background: #1e293b;
+    padding: 20px;
+    margin: 15px auto;
+    max-width: 500px;
+    border-radius: 10px;
+    border: 1px solid #334155;
+}
+
+.doc a {
+    color: #38bdf8; /* Azul cian brillante */
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* BOTON REGRESAR */
+.volver {
+    margin-top: 40px;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background: #f59e0b;
+    color: #000000;
+    font-weight: bold;
+}
+
+/* METODOLOGIAS */
+.container button {
+    padding: 15px 30px;
+    margin: 10px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    color: white;
+}
+
+.infoBox {
+    background: #1e293b;
+    padding: 25px;
+    border-radius: 10px;
+    max-width: 700px;
+    margin: 30px auto;
+    border: 1px solid #334155;
+    color: #e2e8f0;
+}
+
+.infoBox a { color: #38bdf8; }

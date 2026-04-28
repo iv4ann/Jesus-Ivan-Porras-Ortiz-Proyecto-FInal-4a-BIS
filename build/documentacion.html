@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Proyecto Desarrollo de Software</title>
+<div class="perfil">
+
+<img src="foto.jpg" alt="Jesús Iván Porras Ortiz">
+
+<h2>Jesús Iván Porras Ortiz</h2>
+
+</div>
+
+<style>
+
+body{
+font-family:Arial;
+background:#0f172a;
+color:white;
+text-align:center;
+padding:40px;
+}
+.perfil{
+margin-top:20px;
+}
+
+.perfil img{
+width:120px;
+height:120px;
+border-radius:50%;
+object-fit:cover;
+border:4px solid #38bdf8;
+}
+
+.perfil h2{
+margin-top:10px;
+font-weight:normal;
+color:#38bdf8;
+}
+
+/* MENU */
+
+.menu button{
+padding:15px 40px;
+margin:10px;
+font-size:18px;
+border:none;
+border-radius:10px;
+cursor:pointer;
+}
+
+.btn1{background:#2563eb;color:white;}
+.btn2{background:#16a34a;color:white;}
+.btn3{background:#0ea5e9;color:white;}
+
+.seccion{
+display:none;
+margin-top:40px;
+}
+
+/* PARCIAL 1 */
+
+.doc{
+background:#1e293b;
+padding:20px;
+margin:15px auto;
+max-width:400px;
+border-radius:10px;
+}
+
+.doc a{
+color:#38bdf8;
+font-size:18px;
+text-decoration:none;
+}
+
+/* BOTON REGRESAR */
+
+.volver{
+margin-top:40px;
+padding:12px 25px;
+border:none;
+border-radius:8px;
+cursor:pointer;
+background:#f59e0b;
+color:black;
+font-weight:bold;
+}
+
+/* METODOLOGIAS */
+
+.container button{
+padding:15px 30px;
+margin:10px;
+border:none;
+border-radius:10px;
+font-size:16px;
+cursor:pointer;
+color:white;
+}
+
+.m1{background:#14b8a6;}
+.m2{background:#6366f1;}
+.m3{background:#22c55e;}
+.m4{background:#ef4444;}
+.m5{background:#f59e0b;}
+.m6{background:#06b6d4;}
+.m7{background:#8b5cf6;}
+
+.infoBox{
+background:#1e293b;
+padding:25px;
+border-radius:10px;
+max-width:700px;
+margin:auto;
+margin-top:30px;
+}
+
+.infoBox a{
+color:#38bdf8;
+}
+
+.jiraBtn{
+background:#0052cc;
+padding:12px 25px;
+border:none;
+border-radius:8px;
+color:white;
+cursor:pointer;
+font-size:16px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- MENU PRINCIPAL -->
+
+<div id="menu">
+
+<h1>Proyecto Desarrollo de Software</h1>
+
+<div class="menu">
+
+<button class="btn1" onclick="mostrar('p1')">
+📄 Parcial 1
+</button>
+
+<button class="btn2" onclick="mostrar('p2')">
+🧠 Parcial 2
+</button>
+
+<button class="btn3"
+onclick="window.open('https://linkedin.com','_blank')">
+💼 LinkedIn
+</button>
+
+</div>
+
+</div>
+
+<!-- PARCIAL 1 -->
+
+<div id="p1" class="seccion">
+
+<h1>Documentación Parcial 1</h1>
+
+<div class="doc">
+<a href="comandos-react.pdf" download>
+📄 Comandos Básicos de React
+</a>
+</div>
+
+<div class="doc">
+<a href="iso-ieee.pdf" download>
+📄 ISO / Estándar IEEE
+</a>
+</div>
+
+<div class="doc">
+<a href="requerimientos.pdf" download>
+📄 Requerimientos Funcionales y No Funcionales
+</a>
+</div>
+
+<div class="doc">
+<a href="sha256-python.pdf" download>
+📄 Algoritmo SHA-256 en Python
+</a>
+</div>
+
+<button class="volver" onclick="volver()">⬅ Regresar</button>
+
+</div>
+
+<!-- PARCIAL 2 -->
+
+<div id="p2" class="seccion">
+
+<h1>Metodologías de Desarrollo de Software</h1>
+
+<p>
+Las metodologías permiten organizar el trabajo de desarrollo
+para crear software de manera eficiente y controlada.
+Selecciona una para conocer más.
+</p>
+
+<h2>Tipos de metodologías</h2>
+
+<div class="container">
+
+<button class="m1" onclick="info('cascada')">🌊 Cascada</button>
+<button class="m2" onclick="info('modelov')">🔺 Modelo V</button>
+<button class="m3" onclick="info('agil')">⚡ Ágiles</button>
+<button class="m4" onclick="info('scrum')">🏉 Scrum</button>
+
+<br>
+
+<button class="m5" onclick="info('kanban')">📋 Kanban</button>
+<button class="m6" onclick="info('xp')">💻 XP</button>
+<button class="m7" onclick="info('hibrida')">🧩 Híbridas</button>
+
+</div>
+
+<!-- INFORMACION METODOLOGIA -->
+
+<div id="infoMetodologia" class="infoBox">
+
+Selecciona una metodología para ver su descripción.
+
+</div>
+
+<!-- JIRA SIEMPRE VISIBLE -->
+
+<div class="infoBox">
+
+<h3>Link a tablero de trabajo</h3>
+
+<p>
+Utiliza Jira para gestionar tareas, historias de usuario
+y seguimiento del proyecto de desarrollo.
+</p>
+
+<button class="jiraBtn"
+onclick="window.open('https://iv4annp-1772722951027.atlassian.net/jira/software/projects/KAN/boards/2?jql=assignee+%3D+empty&atlOrigin=eyJpIjoiZmRlNjZjMDJhNWI5NDQ2YmE1MWFmYjBhNjJiZDhkMmQiLCJwIjoiaiJ9')">
+Abrir Jira
+</button>
+
+</div>
+
+<button class="volver" onclick="volver()">⬅ Regresar</button>
+
+</div>
+
+<script>
+
+/* MOSTRAR SECCIONES */
+
+function mostrar(id){
+
+document.getElementById("menu").style.display="none"
+
+document.getElementById("p1").style.display="none"
+document.getElementById("p2").style.display="none"
+
+document.getElementById(id).style.display="block"
+
+}
+
+/* REGRESAR MENU */
+
+function volver(){
+
+document.getElementById("menu").style.display="block"
+
+document.getElementById("p1").style.display="none"
+document.getElementById("p2").style.display="none"
+
+}
+
+/* INFORMACION METODOLOGIAS */
+
+function info(tipo){
+
+let texto=""
+
+if(tipo==="cascada"){
+texto=`
+<h3>🌊 Metodología Cascada</h3>
+<p>
+La metodología cascada sigue un proceso secuencial donde
+cada fase debe completarse antes de pasar a la siguiente.
+Se usa en proyectos donde los requisitos están bien definidos.
+</p>`
+}
+
+if(tipo==="modelov"){
+texto=`
+<h3>🔺 Modelo V</h3>
+<p>
+El Modelo V es una evolución de cascada que relaciona cada
+fase de desarrollo con una fase de pruebas, garantizando
+la calidad del software.
+</p>`
+}
+
+if(tipo==="agil"){
+texto=`
+<h3>⚡ Metodologías Ágiles</h3>
+<p>
+Las metodologías ágiles permiten trabajar en ciclos cortos
+de desarrollo llamados iteraciones, facilitando adaptarse
+a cambios y entregar valor continuamente.
+</p>`
+}
+
+if(tipo==="scrum"){
+texto=`
+<h3>🏉 Scrum</h3>
+<p>
+Scrum organiza el desarrollo en sprints de 2 a 4 semanas
+donde el equipo entrega incrementos funcionales del software.
+</p>`
+}
+
+if(tipo==="kanban"){
+texto=`
+<h3>📋 Kanban</h3>
+<p>
+Kanban utiliza tableros visuales para gestionar tareas y
+controlar el flujo de trabajo dentro del equipo.
+</p>`
+}
+
+if(tipo==="xp"){
+texto=`
+<h3>💻 Extreme Programming (XP)</h3>
+<p>
+XP promueve prácticas como programación en pareja,
+pruebas continuas y desarrollo iterativo para mejorar
+la calidad del software.
+</p>`
+}
+
+if(tipo==="hibrida"){
+texto=`
+<h3>🧩 Metodologías Híbridas</h3>
+<p>
+Las metodologías híbridas combinan prácticas de modelos
+tradicionales y ágiles para adaptarse mejor a distintos
+tipos de proyectos.
+</p>`
+}
+
+document.getElementById("infoMetodologia").innerHTML=texto
+
+}
+
+</script>
+
+</body>
+</html>
